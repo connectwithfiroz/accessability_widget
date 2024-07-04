@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Widget by Firoz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Accessibility Widget CSS -->
+    <link rel="stylesheet" href="accessability/css/accesibility-style.min.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to the Accessibility Widget by Firoz</h1>
+                <p class="lead">
+                    This page showcases an accessibility widget developed by Firoz. The widget includes several features designed to enhance accessibility for users:
+                </p>
+                <ul>
+                    <li><strong>Screen Reader:</strong> Helps visually impaired users by reading the text aloud.</li>
+                    <li><strong>Bigger/Smaller Text:</strong> Allows users to adjust the text size for better readability.</li>
+                    <li><strong>Line Spacing:</strong> Provides an option to increase the line spacing for improved readability.</li>
+                </ul>
+                <p>
+                    To integrate this widget into any webpage, simply include the provided CSS and JS files from the <code>accessability</code> folder. The widget button will automatically render in the specified container with the configured options.
+                </p>
+                <p>Don't forget to give a like!</p>
+
+                <h2>Connect with Firoz</h2>
+                <p>You can connect with Firoz on the following platforms:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/firoz-a-b64bb4220/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/connectwithfiroz" target="_blank">GitHub</a></li>
+                    <li><a href="https://connectwithfiroz.github.io/ftoast-message-box/" target="_blank">Toast Component Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accessibility Widget Button Section -->
+    <div id="accessabilityBtnSection"></div>
+
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Accessibility Widget Script -->
+    <script src="accessability/js/accessability.min.js"></script>
+    <script>
+        const options = {
+            backgroundColor: 'red', //BACKGROUND COLOR LIKE red, blue, #000(black)
+            accessabilityBtnContainer: 'accessabilityBtnSection', //ID OF CONTAINER WHERE YOU WANT TO RENDER START ACCESSIBILITY BUTTON
+            // accessabilityBtn : 'Accessability', //pass any html or text (If you'll pass anything then default btn will appear)
+            LANAGUAGE: 'en', //default(en-english), you can pass gu-gujarati, hi-hindi
+        }
+        RenderAccessability(options);
+    </script>
+</body>
+</html>
