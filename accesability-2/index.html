@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility Widget by Firoz</title>
+    <title>Accessibility Widget by </title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Accessibility Widget CSS -->
+    <!-- <link rel="stylesheet" href="accessability/css/accesibility-style.min.css"> -->
     <link rel="stylesheet" href="accessability/css/accesibility-style.css">
+    <style>
+        /* style for draggable element */
+        #myDraggleElement {
+            background-color: #3cefa2;
+            padding: 5px;
+            border: 1px solid #d3d3d3;
+            width: 200px;
+            text-align: center;
+        }
+        </style>
 </head>
 <body>
     <!-- Main Container -->
@@ -17,7 +28,7 @@
                 <h1>Welcome to the Accessibility Widget</h1>
                 <h2>Look at Bottom - RIGHT of you're screen. Try the option and give you're suggention. If you've any idea in your mind, you can show in this repository.</h2>
                 <p class="lead">
-                    This page showcases an accessibility widget developed by Firoz. The widget includes several features designed to enhance accessibility for users:
+                    This page showcases an accessibility widget developed by . The widget includes several features designed to enhance accessibility for users:
                 </p>
                 <ul>
                     <li><strong>Screen Reader:</strong> Helps visually impaired users by reading the text aloud. Active screen reader option and then select the text from this page.</li>
@@ -29,16 +40,16 @@
                 </p>
                 <p>Don't forget to give a like!</p>
 
-                <h2>Connect with Firoz</h2>
-                <p>You can connect with Firoz on the following platforms:</p>
+                <h2>Connect with </h2>
+                <p>You can connect with  on the following platforms:</p>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/firoz-a-b64bb4220/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/connectwithfiroz" target="_blank">GitHub</a></li>
-                    <li><a href="https://connectwithfiroz.github.io/ftoast-message-box/" target="_blank">Toast Component Demo</a></li>
+                    <li><a href="https://www.linkedin.com/in/-a-b64bb4220/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/connectwith" target="_blank">GitHub</a></li>
+                    <li><a href="https://connectwith.github.io/ftoast-message-box/" target="_blank">Toast Component Demo</a></li>
                 </ul>
             </div>
         </div>
-        <i>This is enhanced version of accessability widget provided by https://dst.gujarat.gov.in/Index</i>
+        
 
     </div>
 
@@ -55,11 +66,12 @@
     <script src="accessability/js/accessability.js"></script>
     <script>
         const options = {
-            backgroundColor: 'red', //BACKGROUND COLOR LIKE red, blue, #000(black)
-            accessabilityBtnContainer: 'accessabilityBtnSection', //ID OF CONTAINER WHERE YOU WANT TO RENDER START ACCESSIBILITY BUTTON
+            // backgroundColor: 'red', //BACKGROUND COLOR LIKE red, blue, #000(black)
+            // accessabilityBtnContainer: 'accessabilityBtnSection', //ID OF CONTAINER WHERE YOU WANT TO RENDER START ACCESSIBILITY BUTTON
             // accessabilityBtn : 'Accessability', //pass any html or text (If you'll pass anything then default btn will appear)
             LANAGUAGE: 'en', //default(en-english), you can pass gu-gujarati, hi-hindi
         }
         RenderAccessability(options);
     </script>
+    <script type="module" src="./accessability/js/draggable.js"></script>
 </html>
